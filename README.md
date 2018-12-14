@@ -165,12 +165,16 @@ _site/
 
 
 *   [.gitignore manual](https://git-scm.com/docs/gitignore)
+*   `[.gitignore manual](https://git-scm.com/docs/gitignore)`
 *   [Example .gitignore files](https://github.com/github/gitignore)
+*   `[Example .gitignore files](https://github.com/github/gitignore)`
 *   [The Octocat has a Gist containing some good rules to add to this file.](https://gist.github.com/octocat/9257657)
+*   `[The Octocat has a Gist containing some good rules to add to this file.](https://gist.github.com/octocat/9257657)`
 
 ### .exclude [≪](#read-me)
 
 *   [Explicit repository excludes](https://help.github.com/articles/ignoring-files/#explicit-repository-excludes)
+*   `[Explicit repository excludes](https://help.github.com/articles/ignoring-files/#explicit-repository-excludes)`
 
 * * *
 
