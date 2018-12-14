@@ -160,7 +160,9 @@ _site/
 # npm_modules.gitignore dependency directories #
 ################################################
 
-# node_modules/```
+# node_modules/
+```
+
 
 *   [.gitignore manual](https://git-scm.com/docs/gitignore)
 *   [Example .gitignore files](https://github.com/github/gitignore)
