@@ -161,7 +161,7 @@ _site/
 ################################################
 
 # node_modules/
-```markdown
+```
 
 
 *   [.gitignore manual](https://git-scm.com/docs/gitignore)
