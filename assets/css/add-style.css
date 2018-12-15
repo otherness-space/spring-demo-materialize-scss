@@ -1,0 +1,29 @@
+/* https://www.npmjs.com/package/styleflux */
+/* styleflux -o <filename> */
+/* mv <filename>.css sass_dir/_<filename>.scss */
+/* styleflux -o assets/css/add-style.css */
+/* mv assets/css/add-style_clean.scss scss/_add-style.scss */
+/* add @import "add-style"; => assets/css/main.scss */
+/* convert css to scss for Jekyll native sass to play with */
+html {
+  font-size: 100%;
+}
+
+html,
+body,
+p {
+  display: block;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  padding: 0 .5em;
+}
+
+body {
+  background: hsla(0, 0%, 100%, .9);
+}
