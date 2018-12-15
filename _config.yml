@@ -1,0 +1,57 @@
+highlighter:   none
+# excerpt_separator: <!--more-->
+# markdown:    kramdown
+plugins:
+  # deafault
+  # - jekyll-coffeescript
+  # - jekyll-gist
+  # - jekyll-github-metadata
+  # - jekyll-paginate
+  # - jekyll-relative-links
+  # - jekyll-optional-front-matter
+  # - jekyll-readme-index
+  # - jekyll-default-layout
+  # - jekyll-titles-from-headings
+  # optional
+  # - jekyll-feed
+  # - jekyll-redirect-from
+  # - jekyll-seo-tag
+  # - jekyll-sitemap
+  # - jekyll-avatar
+  # - jemoji
+  - jekyll-mentions
+  # - jekyll-include-cache
+
+sass:
+  load_paths:
+    - scss
+    # - sass_dir
+    # - _sass
+    # - node_modules
+
+include:
+  - permalink: /404.html
+  - assets/js
+
+exclude:
+  - node_modules
+  - LICENSE
+  - Makefile
+# - README.md
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - blank.html
+  - assets/css/blank.css
+  - assets/css/add-style.css
+  - test
+  - .eslintrc.js
+  - .travis.yml
+  - index.js
+  - assets/css/prism.css
+  # - assets/css/style.css
+  # Jekyll local build serve does not like prism.min.js
+  - assets/js/prism.min.js
+  # - assets/js/script.js.01.bak
+  # - assets/js/script.js.02.bak
+  # - assets/js/script.js
