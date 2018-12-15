@@ -3,6 +3,7 @@
 /* mv <filename>.css sass_dir/_<filename>.scss */
 /* styleflux -o assets/css/add-style.css */
 /* mv assets/css/add-style_clean.scss scss/_add-style.scss */
+/* styleflux -o assets/css/add-style.css;mv assets/css/add-style_clean.scss scss/_add-style.scss */
 /* add @import "add-style"; => assets/css/main.scss */
 /* convert css to scss for Jekyll native sass to play with */
 html {
@@ -11,7 +12,12 @@ html {
 
 html,
 body,
-p {
+header,
+nav,
+main,
+p,
+.header-box,
+.nav-box {
   display: block;
   box-sizing: border-box;
 }
@@ -21,9 +27,224 @@ body {
   width: 100%;
   margin: 0;
   border: 0;
-  padding: 0 .5em;
+  padding: 0;
 }
 
 body {
   background: hsla(0, 0%, 100%, .9);
 }
+
+header {
+  background: rgba(205, 220, 255, .25);
+}
+
+header h1,
+header h2,
+header h3 {}
+
+header h4 {
+  font-style: italic;
+}
+
+.header-box,
+.nav-box {}
+
+p,
+.header-box,
+.nav-box {
+  margin: 0 auto;
+}
+
+header,
+nav {}
+
+nav {}
+
+nav:hover {}
+
+nav ul {}
+
+nav ul li {}
+
+nav ul li:hover {}
+
+main {
+  margin: 0 auto;
+  border: 0;
+  padding: .5em;
+}
+
+section {
+  margin: 0 auto;
+  padding: calc(.25*1em);
+  background: rgba(211, 211, 211, .5);
+}
+
+article {
+  margin: calc(.25*1em);
+  padding: calc(.25*1em);
+}
+
+aside {
+  font-size: .707em;
+}
+
+footer {
+  font-size: .5em;
+}
+
+h1, .h1 {
+  font-size: calc(3.998em * .9);
+}
+
+h2, .h2 {
+  font-size: 2.827em;
+}
+
+h3, .h3 {
+  font-size: 1.999em;
+}
+
+h4, .h4 {
+  font-size: 1.414em;
+}
+
+/* font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; */
+p {
+  font-size: calc(1.2*1em);
+}
+
+article h4 {}
+
+article p {}
+
+.p-break {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+a {}
+
+a:hover {}
+
+a:active {}
+
+a:visited {}
+
+/**
+* PrismJS style edits
+*/
+/* caution these font sizes affect the size of the prismjs boxes */
+pre {
+  font-size: calc(1.2*1em);
+}
+
+code {
+  font-size: calc(.9*1em);
+}
+
+pre[class*="language-"],
+:not(pre)>code[class*="language-"] {
+  background: hsla(0, 0%, 15%, 1);
+  border: .15em solid hsla(0, 0%, 70%, 1);
+  padding: .25em;
+}
+
+pre[class*="language-"] {
+  border: .15em solid hsla(0, 0%, 70%, 1);
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+pre[class*="language-"]:hover {
+  border: .15em solid hsla(0, 0%, 90%, 1);
+}
+
+article pre[class*="language-"] {}
+
+/* breakpoints */
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// > 400px
+@media (min-width: 25em) {
+  header h1 {}
+}
+
+@media (min-width: 29.9375em) {
+  main {}
+
+  section {}
+
+  p,
+  pre[class*="language-"] {}
+
+  article p,
+  article pre[class*="language-"] {}
+}
+
+// > 560px
+@media (min-width: 35em) {
+
+  .header-box,
+  .nav-box,
+  p {}
+
+  main {}
+
+  section {}
+
+  article h1,
+  article h2,
+  article h3,
+  article h4 {}
+
+  article p {}
+
+  pre[class*="language-"] {}
+
+  article pre[class*="language-"] {}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 36em) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 48em) {
+
+  header,
+  nav {}
+
+  section {}
+
+  .header-box,
+  .nav-box {}
+
+  pre[class*="language-"] {}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 62em) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 75em) {}
+
+// Extra small devices (portrait phones, less than 576px)
+/* @media (max-width: 575.98px) {} */
+@media (max-width: 35.99875em) {}
+
+// Small devices (landscape phones, less than 768px)
+/* @media (max-width: 767.98px) {} */
+@media (max-width: 47.99875em) {}
+
+// Medium devices (tablets, less than 992px)
+/* @media (max-width: 991.98px) {} */
+@media (max-width: 61.99875em) {}
+
+@media (max-width: 63.81125em) {}
+
+// Large devices (desktops, less than 1200px)
+/* @media (max-width: 1199.98px) {} */
+@media (max-width: 74.99875em) {}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
