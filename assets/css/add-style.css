@@ -16,8 +16,7 @@ header,
 nav,
 main,
 p,
-.header-box,
-.nav-box {
+.header-box {
   display: block;
   box-sizing: border-box;
 }
@@ -60,12 +59,10 @@ h4,
   margin: 0 0 .2em 0;
 }
 
-.header-box,
-.nav-box {}
+.header-box {}
 
 p,
-.header-box,
-.nav-box {
+.header-box {
   margin: 0 auto;
 }
 
@@ -200,7 +197,6 @@ article pre[class*="language-"] {}
 @media (min-width: 35em) {
 
   .header-box,
-  .nav-box,
   p {}
 
   main {}
@@ -230,8 +226,7 @@ article pre[class*="language-"] {}
 
   section {}
 
-  .header-box,
-  .nav-box {}
+  .header-box {}
 
   pre[class*="language-"] {}
 }
