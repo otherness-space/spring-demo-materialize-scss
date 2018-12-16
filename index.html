@@ -33,7 +33,7 @@
     <div class="nav-wrapper">
       <a href="#" data-target="mobile-menu" class="sidenav-trigger">
         <i class="indigo-text text-darken-5 material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
+      <ul class="right hide-on-med-and-down"  id="mobile-state">
         <li><a class="indigo-text text-darken-5" href='#'>nav</a></li>
         <li><a class="indigo-text text-darken-5" href='#'>menu</a></li>
         <li><a class="indigo-text text-darken-5" href='#'>demo</a></li>
@@ -42,9 +42,11 @@
   </nav>
 
   <ul class="sidenav" id="mobile-menu">
-    <li><a href='#'>nav</a></li>
-    <li><a href='#'>menu</a></li>
-    <li><a href='#'>demo</a></li>
+    <li><a href="#" data-target="mobile-state" class="sidenav-trigger">
+        <i class="indigo-text text-darken-5 material-icons">menu</i></a></li>
+    <li><a class="indigo-text text-darken-5" href='#'>nav</a></li>
+    <li><a class="indigo-text text-darken-5" href='#'>menu</a></li>
+    <li><a class="indigo-text text-darken-5" href='#'>demo</a></li>
   </ul>
 
   <main>
