@@ -49,6 +49,7 @@ exclude:
   - .travis.yml
   - index.js
   - assets/css/prism.css
+  - assets/css/.main.scss
   # - assets/css/style.css
   # Jekyll local build serve does not like prism.min.js
   - assets/js/prism.min.js
