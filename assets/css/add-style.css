@@ -45,6 +45,10 @@ header h4 {
   font-style: italic;
 }
 
+header h4 {
+  margin: 0;
+}
+
 h1,
 .h1,
 h2,
