@@ -47,6 +47,7 @@ header h4 {
 
 header h4 {
   margin: 0;
+  padding: 0 0 calc(.25*1em) 0;
 }
 
 h1,
