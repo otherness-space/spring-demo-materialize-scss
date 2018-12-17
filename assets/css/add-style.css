@@ -244,6 +244,10 @@ article pre[class*="language-"] {}
 
   .header-box {}
 
+  .container {
+    width: 100%;
+  }
+
   pre[class*="language-"] {}
 }
 

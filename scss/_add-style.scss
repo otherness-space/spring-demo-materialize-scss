@@ -160,3 +160,9 @@ pre[class*="language-"] {
     padding: .25em;
   }
 }
+
+@media (min-width: 48em) {
+  .container {
+    width: 100%;
+  }
+}
