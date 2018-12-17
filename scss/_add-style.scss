@@ -1,6 +1,4 @@
 $black_262626: #262626;
-$darkgray_b3b3b3: #b3b3b3;
-$gainsboro_e6e6e6: #e6e6e6;
 
 html {
   border: 0;
@@ -145,20 +143,20 @@ code {
 
 pre[class*="language-"] {
   background: $black_262626;
-  border: .15em solid $darkgray_b3b3b3;
+  border: .15em solid rgba(179, 179, 179, .9);
   padding: .25em;
   margin: 0 auto;
   overflow-x: auto;
 
   &:hover {
-    border: .15em solid $gainsboro_e6e6e6;
+    border: .15em solid rgba(230, 230, 230, .9);
   }
 }
 
 :not(pre) {
   >code[class*="language-"] {
     background: $black_262626;
-    border: .15em solid $darkgray_b3b3b3;
+    border: .15em solid rgba(179, 179, 179, .9);
     padding: .25em;
   }
 }

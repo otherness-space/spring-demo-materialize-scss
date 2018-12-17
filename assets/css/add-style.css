@@ -173,18 +173,18 @@ code {
 pre[class*="language-"],
 :not(pre)>code[class*="language-"] {
   background: hsla(0, 0%, 15%, 1);
-  border: .15em solid hsla(0, 0%, 70%, 1);
+  border: .15em solid hsla(0, 0%, 70%, .9);
   padding: .25em;
 }
 
 pre[class*="language-"] {
-  border: .15em solid hsla(0, 0%, 70%, 1);
+  border: .15em solid hsla(0, 0%, 70%, .9);
   margin: 0 auto;
   overflow-x: auto;
 }
 
 pre[class*="language-"]:hover {
-  border: .15em solid hsla(0, 0%, 90%, 1);
+  border: .15em solid hsla(0, 0%, 90%, .9);
 }
 
 article pre[class*="language-"] {}
