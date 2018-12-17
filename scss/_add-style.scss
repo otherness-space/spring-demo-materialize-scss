@@ -161,6 +161,18 @@ pre[class*="language-"] {
   }
 }
 
+@media (min-width: 36em) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media (min-width: 62em) {
+  .container {
+    width: 60%;
+  }
+}
+
 @media (max-width: 35.99875em) {
   .container {
     width: 100%;
