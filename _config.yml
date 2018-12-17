@@ -28,6 +28,7 @@ sass:
     # - sass_dir
     # - _sass
     # - node_modules
+  style: compressed
 
 include:
   - permalink: /404.html
