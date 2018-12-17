@@ -232,7 +232,11 @@ article pre[class*="language-"] {}
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 36em) {}
+@media (min-width: 36em) {
+  .container {
+    width: 100%;
+  }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 48em) {
@@ -243,10 +247,6 @@ article pre[class*="language-"] {}
   section {}
 
   .header-box {}
-
-  .container {
-    width: 100%;
-  }
 
   pre[class*="language-"] {}
 }
