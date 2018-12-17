@@ -124,6 +124,17 @@ footer {
   word-wrap: break-word;
 }
 
+.sidenav {
+  li {
+    i {
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      padding: 0 32px;
+    }
+  }
+}
+
 pre {
   font-size: calc(1.2*1em);
 }

@@ -147,6 +147,17 @@ a:active {}
 
 a:visited {}
 
+/*
+* Materiliaze edits
+*/
+
+.sidenav li i {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
 /**
 * PrismJS style edits
 */
