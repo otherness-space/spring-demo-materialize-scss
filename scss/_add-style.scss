@@ -25,6 +25,10 @@ header {
   box-sizing: border-box;
   background: rgba(205, 220, 255, .25);
 
+  .row {
+    margin: 0 auto 0 auto;
+  }
+
   h4 {
     font-style: italic;
     margin: 0;

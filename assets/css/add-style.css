@@ -37,6 +37,10 @@ header {
   background: rgba(205, 220, 255, .25);
 }
 
+header .row {
+  margin: 0 auto 0 auto;
+}
+
 header h1,
 header h2,
 header h3 {}
@@ -150,7 +154,6 @@ a:visited {}
 /*
 * Materiliaze edits
 */
-
 .sidenav li i {
   display: block;
   height: 48px;
