@@ -267,9 +267,6 @@ article pre[class*="language-"] {}
 // Extra small devices (portrait phones, less than 576px)
 /* @media (max-width: 575.98px) {} */
 @media (max-width: 35.99875em) {
-  h1, .h1 {
-    font-size: calc(3.998em * .8);
-  }
   .container {
     width: 100%;
   }
@@ -277,7 +274,13 @@ article pre[class*="language-"] {}
 
 // Small devices (landscape phones, less than 768px)
 /* @media (max-width: 767.98px) {} */
-@media (max-width: 47.99875em) {}
+@media (max-width: 47.99875em) {
+
+  h1,
+  .h1 {
+    font-size: calc(3.998em * .8);
+  }
+}
 
 // Medium devices (tablets, less than 992px)
 /* @media (max-width: 991.98px) {} */
