@@ -178,6 +178,14 @@ pre[class*="language-"] {
 }
 
 @media (max-width: 35.99875em) {
+  h1 {
+    font-size: calc(3.998em * .8);
+  }
+
+  .h1 {
+    font-size: calc(3.998em * .8);
+  }
+
   .container {
     width: 100%;
   }

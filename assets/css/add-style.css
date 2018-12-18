@@ -267,6 +267,9 @@ article pre[class*="language-"] {}
 // Extra small devices (portrait phones, less than 576px)
 /* @media (max-width: 575.98px) {} */
 @media (max-width: 35.99875em) {
+  h1, .h1 {
+    font-size: calc(3.998em * .8);
+  }
   .container {
     width: 100%;
   }
