@@ -38,7 +38,7 @@ exclude:
   - node_modules
   - LICENSE
   - Makefile
-# - README.md
+  # - README.md
   - package.json
   - package-lock.json
   - yarn.lock
