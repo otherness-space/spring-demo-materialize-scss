@@ -2,7 +2,7 @@ highlighter:   none
 # excerpt_separator: <!--more-->
 # markdown:    kramdown
 plugins:
-  # deafault
+  # default
   # - jekyll-coffeescript
   # - jekyll-gist
   # - jekyll-github-metadata
