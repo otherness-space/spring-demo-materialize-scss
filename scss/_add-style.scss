@@ -37,8 +37,12 @@ header {
 }
 
 nav {
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
+
+  .sidenav-trigger {
+    float: right;
+  }
 }
 
 main {
