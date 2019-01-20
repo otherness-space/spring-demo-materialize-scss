@@ -130,6 +130,21 @@ footer {
   word-wrap: break-word;
 }
 
+.hangingindent {
+  padding-left: 2.5em;
+  text-indent: -2.5em;
+}
+
+.citation {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.revision {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  margin: 2em auto;
+  text-align: center;
+}
+
 .sidenav {
   li {
     i {

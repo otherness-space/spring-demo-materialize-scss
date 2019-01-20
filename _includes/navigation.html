@@ -1,0 +1,18 @@
+<nav class="indigo lighten-5" role="navigation">
+  <div class="nav-wrapper container">
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+      <i class="indigo-text text-darken-5 material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down" id="mobile-state">
+      {% for item in site.data.navigation %}
+      <li><a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul class="sidenav" id="nav-mobile">
+      {% for item in site.data.navigation %}
+      <li><i class="indigo-text text-darken-5 material-icons">navigation</i></li>
+      <li></li>
+      <li><a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,6 +1,20 @@
-highlighter:   none
-# excerpt_separator: <!--more-->
-# markdown:    kramdown
+highlighter: none
+url: https://otherness-space.github.io/spring-demo-materialize-scss/
+# url: http://localhost:4000/
+timezone: America/New_York
+incremental: true
+
+excerpt_separator: <!--more-->
+markdown: kramdown
+# enable_analytics: true
+
+script:
+  - JEKYLL_ENV=production bundle exec jekyll build
+
+# Where things are
+posts:
+    output: true
+
 plugins:
   # default
   # - jekyll-coffeescript
@@ -13,7 +27,7 @@ plugins:
   # - jekyll-default-layout
   # - jekyll-titles-from-headings
   # optional
-  # - jekyll-feed
+  - jekyll-feed
   # - jekyll-redirect-from
   # - jekyll-seo-tag
   # - jekyll-sitemap
@@ -30,13 +44,16 @@ sass:
     # - node_modules
   style: compressed
 
+# Handling Reading
+encoding: utf-8
+
 include:
   - permalink: /404.html
   - assets/js
 
 exclude:
   - node_modules
-  - LICENSE
+  # - LICENSE
   - Makefile
   # - README.md
   - package.json
@@ -50,10 +67,6 @@ exclude:
   - .travis.yml
   - index.js
   - assets/css/prism.css
-  - assets/css/.main.scss
   # - assets/css/style.css
-  # Jekyll local build serve does not like prism.min.js
   - assets/js/prism.js
-  # - assets/js/script.js.01.bak
-  # - assets/js/script.js.02.bak
   # - assets/js/script.js
