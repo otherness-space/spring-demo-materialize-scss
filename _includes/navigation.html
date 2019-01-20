@@ -4,14 +4,35 @@
       <i class="indigo-text text-darken-5 material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down" id="mobile-state">
       {% for item in site.data.navigation %}
-      <li><a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a></li>
+      {% if page.url==item.link %}
+        <li class="active">
+          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
+          </a>
+        </li>
+      {% else %}
+        <li class="">
+          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
+          </a>
+        </li>
+      {% endif %}
       {% endfor %}
     </ul>
     <ul class="sidenav" id="nav-mobile">
-      {% for item in site.data.navigation %}
+
       <li><i class="indigo-text text-darken-5 material-icons">navigation</i></li>
       <li></li>
-      <li><a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a></li>
+      {% for item in site.data.navigation %}
+      {% if page.url==item.link %}
+        <li class="active">
+          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
+          </a>
+        </li>
+      {% else %}
+        <li class="">
+          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
+          </a>
+        </li>
+      {% endif %}
       {% endfor %}
     </ul>
   </div>
