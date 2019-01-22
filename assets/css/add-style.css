@@ -147,6 +147,19 @@ article p {}
   word-wrap: break-word;
 }
 
+.p-indent {
+  text-indent: 2.5em;
+}
+.p-indent::first-line {
+  word-spacing: calc(.3*1em);
+  /* letter-spacing: calc(.05*1em); */
+}
+
+p .p-indent {
+  word-break: normal;
+  white-space:pre-wrap;
+}
+
 a {}
 
 a:hover {}

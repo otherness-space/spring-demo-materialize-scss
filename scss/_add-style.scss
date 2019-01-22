@@ -54,10 +54,15 @@ main {
 }
 
 p {
-  box-sizing: border-box;
   display: block;
-  font-size: calc(1.2*1em);
+  box-sizing: border-box;
   margin: 0 auto;
+  font-size: calc(1.2*1em);
+
+  .p-indent {
+    white-space: pre-wrap;
+    word-break: normal;
+  }
 }
 
 .header-box {
@@ -128,6 +133,14 @@ footer {
 .p-break {
   word-break: break-all;
   word-wrap: break-word;
+}
+
+.p-indent {
+  text-indent: 2.5em;
+
+  &:first-line {
+    word-spacing: calc(.3*1em);
+  }
 }
 
 .hangingindent {
