@@ -3,37 +3,13 @@
     <a href="#" data-target="nav-mobile" class="sidenav-trigger">
       <i class="indigo-text text-darken-5 material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down" id="mobile-state">
-      {% for item in site.data.navigation %}
-      {% if page.url==item.link %}
-        <li class="active">
-          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
-          </a>
-        </li>
-      {% else %}
-        <li class="">
-          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
-          </a>
-        </li>
-      {% endif %}
-      {% endfor %}
+      {% include nav-liquid.html %}
     </ul>
     <ul class="sidenav" id="nav-mobile">
 
       <li><i class="indigo-text text-darken-5 material-icons">navigation</i></li>
       <li></li>
-      {% for item in site.data.navigation %}
-      {% if page.url==item.link %}
-        <li class="active">
-          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
-          </a>
-        </li>
-      {% else %}
-        <li class="">
-          <a class="indigo-text text-darken-5" href="{{ site.url }}{{ item.link }}">{{ item.name }}
-          </a>
-        </li>
-      {% endif %}
-      {% endfor %}
+      {% include nav-liquid.html %}
     </ul>
   </div>
 </nav>

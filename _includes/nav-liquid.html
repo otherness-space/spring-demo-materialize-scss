@@ -1,0 +1,11 @@
+<li><a class="indigo-text text-darken-5" href="{{ site.url }}">Home</a></li>
+{% for item in site.data.navigation %}
+
+{% if page.url contains item.link %}
+{% include nav-active.html %}
+
+{% else %}
+{% include nav-inactive.html %}
+
+{% endif %}
+{% endfor %}
