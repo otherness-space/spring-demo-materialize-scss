@@ -137,10 +137,6 @@ footer {
 
 .p-indent {
   text-indent: 2.5em;
-
-  &:first-line {
-    word-spacing: calc(.3*1em);
-  }
 }
 
 .hangingindent {

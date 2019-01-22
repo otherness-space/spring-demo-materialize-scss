@@ -150,10 +150,10 @@ article p {}
 .p-indent {
   text-indent: 2.5em;
 }
-.p-indent::first-line {
-  word-spacing: calc(.3*1em);
+/* .p-indent::first-line { */
+  /* word-spacing: calc(.3*1em); */
   /* letter-spacing: calc(.05*1em); */
-}
+/* } */
 
 p .p-indent {
   word-break: normal;
