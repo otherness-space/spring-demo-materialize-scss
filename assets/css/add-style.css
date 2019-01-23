@@ -177,8 +177,9 @@ a:visited {}
   font: normal normal calc(1.1*1em)/normal "Times New Roman", Times, serif;
   text-indent: -2.5em;
 }
+
 .cite-style {
-  font: normal normal calc(1.25*1em)/normal "Times New Roman", Times, serif;
+  font: normal normal calc(1.1*1em)/normal "Times New Roman", Times, serif;
 }
 
 /** Designed, built, and released under MIT license by mdo http://github.com/poole/poole. */
@@ -310,6 +311,14 @@ article pre[class*="language-"] {}
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 75em) {}
+
+/* @media (max-width: 360px) {} */
+@media (max-width: 22.5em) {
+  .cite-top,
+  .cite-style {
+    margin: 0 0 0 calc(.25*1em);
+  }
+}
 
 // Extra small devices (portrait phones, less than 576px)
 /* @media (max-width: 575.98px) {} */

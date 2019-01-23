@@ -150,7 +150,7 @@ footer {
 }
 
 .cite-style {
-  font: normal normal calc(1.25*1em)/normal "Times New Roman", Times, serif;
+  font: normal normal calc(1.1*1em)/normal "Times New Roman", Times, serif;
 }
 
 .citation {
@@ -211,6 +211,16 @@ pre[class*="language-"] {
 @media (min-width: 62em) {
   .container {
     width: 60%;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .cite-top {
+    margin: 0 0 0 calc(.25*1em);
+  }
+
+  .cite-style {
+    margin: 0 0 0 calc(.25*1em);
   }
 }
 
