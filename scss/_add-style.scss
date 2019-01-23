@@ -139,9 +139,18 @@ footer {
   text-indent: 2.5em;
 }
 
+.cite-top {
+  margin: 2em auto;
+}
+
 .hangingindent {
+  font: normal normal calc(1.1*1em)/normal "Times New Roman", Times, serif;
   padding-left: 2.5em;
   text-indent: -2.5em;
+}
+
+.cite-style {
+  font: normal normal calc(1.25*1em)/normal "Times New Roman", Times, serif;
 }
 
 .citation {
