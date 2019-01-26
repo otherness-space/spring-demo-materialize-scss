@@ -1,11 +1,13 @@
-highlighter: none
-url: https://otherness-space.github.io/spring-demo-materialize-scss/
+github: [metadata]
+
+url: https://otherness-space.github.io/spring-demo-materialize-scss
 # url: http://localhost:4000/
 timezone: America/New_York
 incremental: true
 
 excerpt_separator: <!--more-->
-markdown: kramdown
+kramdown:
+  input: GFM
 # enable_analytics: true
 
 script:
