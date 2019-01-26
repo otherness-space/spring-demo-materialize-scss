@@ -8,6 +8,7 @@ layout: default
   <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
   {{ content }}
+  {{ page.content | number_of_words }}
 </main>
 
-{% include cite.html %}
+{% include cite-post.html %}
