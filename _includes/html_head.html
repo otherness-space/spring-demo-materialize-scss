@@ -5,15 +5,12 @@
 <!-- <meta name="keywords" content="{{ page.tags | join: "," }}"> -->
 
 <!-- RSS feed -->
-<link rel="alternate" type="application/rss+xml" title="{{ site.data.site.title }}" href="{{ site.url }}/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="{{ site.data.site.title }}" href="{{ "/feed.xml" | relative_url }}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/prism.min.css">
-<!-- {{ "/assets/css/prism.min.css" | relative_url }} -->
-<link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
-<!-- {{ "/assets/css/style.css" | relative_url }} -->
-<!-- <link rel="stylesheet" href="assets/css/main.css"> -->
+<link rel="stylesheet" href="{{ "/assets/css/prism.min.css" | relative_url }}">
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 <title>{{ page.title }}</title>
 
 <!-- Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines. Please use single quote strings to contain punctuation in .yaml strings, i.e. page titles.  -->
