@@ -8,7 +8,7 @@ permalink: blog/
 
   <ul class="blog-page-padding list-group">
     {% for post in site.posts %}
-      <li class="list-group-item">
+      <li class="row list-group-item">
         <h2><a class="col s12 m12 l12 waves-effect waves-purple waves-light" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
         <p>{{ post.excerpt | truncatewords: 50}}</p>
       </li>
